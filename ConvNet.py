@@ -35,7 +35,7 @@ class ConvNet():
 
         if not os.path.isfile(model_path):
 
-            url = 'https://github.com/opencv/opencv_extra/blob/master/testdata/cv/ximgproc/model.yml.gz?raw=true'
+            url = 'https://github.com/markcNewell/ConvNet/blob/main/model.yml.gz?raw=true'
             r = requests.get(url, allow_redirects=True)
 
             open(model_path, 'wb').write(r.content)
